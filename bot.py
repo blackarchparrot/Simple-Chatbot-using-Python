@@ -7,10 +7,12 @@ import requests
 import os, json
 from datetime import datetime
 
+OPENAI_API_KEY="your_openai_key"
+WEATHER_API_KEY="your_openweather_key"
+rate = 1
+
 MEMORY_FILE = "chat_memory.json"
 client = OpenAI()
-
-rate = 1
 
 engine = pyttsx3.init()
 engine.setProperty(rate, 170)
